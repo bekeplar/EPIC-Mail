@@ -1,0 +1,82 @@
+body{
+    margin: 0px;
+    background-size: cover;
+    background-color: #bd9db3;
+    padding-right: 0;
+}
+
+header, h1{
+    padding-top: 1%;
+    padding-left: 2%;
+}
+
+.dare {
+    padding-left: 20%;
+    padding-right: 25%;
+    padding-bottom: 5%;
+    padding-top: 0%;
+    margin-left: 5%;   
+}
+
+h3{
+    font-size: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 200;
+}
+
+form{
+    border: 1px solid rgb(216, 200, 200);
+    border-radius: 12px;
+    width: 100%;
+    margin-left: 10% ;
+    background-color: rgb(177, 177, 175);
+    margin-right: 60%;
+    font-size: 1.2em;
+   
+} 
+
+button {
+    border-radius: 12px;
+    padding: 3% 3%;
+    text-align: center;
+    width: 40%;
+    font-size: 120%;
+    background-color: rgb(226, 231, 222);
+    margin-bottom: 10%;
+    margin-left: 20%;
+} 
+button:hover{
+    background-color: #1cb7e2;
+}
+
+input {
+    display: block;
+    width: 80%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    margin: 10px  0px;
+    padding-left: 20%;
+    background-color: rgb(238, 239, 248);
+}
+input:hover{
+    background-color: rgb(149, 181, 184);
+    color: azure;
+}
+
+.rectangle{
+    padding-left: 15%;
+}
+
+a {
+  text-decoration: none; 
+  font-size: 1.3em; 
+}
+
+a:hover{
+    color: rgb(218, 25, 57);
+}

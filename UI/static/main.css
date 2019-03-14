@@ -57,17 +57,14 @@ input {
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 5px;
-    display: block;
     text-align: center;
-    margin: 10px  0px;
-    padding-left: 20%;
+    margin: 10px  10px;
     background-color: rgb(238, 239, 248);
 }
 input:hover{
     background-color: rgb(149, 181, 184);
     color: azure;
 }
-
 .rectangle{
     padding-left: 15%;
 }

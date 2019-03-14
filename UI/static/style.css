@@ -1,0 +1,123 @@
+body {
+    background-color: blanchedalmond;
+    background-size: 100%;
+    margin: 0;
+}
+
+.main_menu {
+    height: 100%;
+    width: 13%;
+    position: fixed;
+    left: 0;
+    margin-left: 2%;
+}
+
+.newbie, .create_epic {
+    width: 20%;
+    margin: auto;
+    margin-left: 8%;
+    height: 40px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+form input {
+    display: block;
+    width: 80%;
+    border-radius: 4px;
+    height: 40px;
+    padding: 7px;
+    margin-top: 9px;
+    margin-bottom: 4px;
+    margin-left: 8%;
+    border: none;
+    background-color: rgb(232, 233, 245);
+}
+
+input:hover{
+    background-color: rgb(204, 231, 195);
+    color: azure;
+}
+
+.main_menu a:hover{
+    background-color: rgb(70, 226, 18);
+    color: azure;
+}
+
+button:hover{
+    background-color: rgb(167, 184, 149);
+}
+
+
+.main_menu a {
+    text-decoration: none;
+    display: block;
+    font-size: 135%;
+    padding-bottom: 2%;
+    border-radius: 5px;
+    padding-left: 6%;
+    padding-right: 2%; 
+    background-color: rgb(54, 145, 236, 0.4);
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+}
+
+label {
+    margin-left: 8%;
+}
+
+form button {
+    width: 50%;
+    margin: auto;
+    margin-left: 25%;
+    border-radius: 5px;
+    height: 40px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.epicmail a{
+    margin-left: 5%;
+    text-decoration: none;
+    font-size: 80%;
+}
+
+#button-draft {
+    width: 70%;
+    margin-left: 30%;
+    border-radius: 5px;
+    height: 40%;
+    border: none;
+    margin-top: 2%;
+    padding-bottom: 2%;
+}
+
+.epicmail {
+    margin-top: 10px;
+    margin-left: 220px;
+    font-size: 28px;
+    border-radius: 5px;
+    width: 80%;
+    background-color: rgba(206, 199, 205, 0.4);
+    color: white;
+}
+
+.header {
+    float: right;
+}
+
+
+#compose_message, #my_messages, #reset{
+    text-align: center;
+    font-size: 30px;
+}
+
+button{
+    background-color: rgb(183, 236, 236);
+}
+
+.create_epic{
+    margin-left: 40.9%;
+}

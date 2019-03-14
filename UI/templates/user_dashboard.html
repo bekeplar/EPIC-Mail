@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>User dashboard!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../static/style.css" />
+</head>
+<epicmail>
+    <div class="epic">
+            <header>
+                <h1>EpicMail</h1>
+            </header>
+            <div class="main_menu">
+                <a href="#">New</a>
+                <a href="#">Inbox</a>
+                <a href="#"">Sent</a>
+                <a href="#">Drafts</a>
+            </div>
+            <div id="Compose" class="epicmail">
+                <form>
+                    <div id="compose_message">Create new message</div>
+                    <hr>
+                    <div id="sender"><input type="email" required placeholder="From" ></div>
+                    <hr>
+                    <div id="reciever"><input type="email"required placeholder="To" ></div>
+                    OR
+                    <hr>
+                    <div id="reciever"><input type="name"placeholder="Group" ></div>
+                     <hr>
+                    <div id="subject"><input type="text"required placeholder="Subject"></div>
+                     <hr>
+                    <div class="button">
+                        <button type="submit" class="newbie">Send</button>
+                        <button type="submit" class="create_epic">Save as Draft</button>
+                    </div>
+                </form>
+            </div>
+            <div id="Inbox" class="epicmail">
+                <div id="my_messages">Inbox</div>
+                <hr>
+                <div><a href="#">Andela21 Expression</a> ..............................</div>
+                <hr>
+                <div><a href="#">Digest Africa</a> ................................</div>
+                <hr>
+            </div>
+            <div id="Sent" class="epicmail">
+                <div id="my_messages">Sent</div>
+                <hr>
+                <div><a href="#">My Andela Application</a> ...........................</div>
+                <hr>
+                <div><a href="#">Mtn weekly data</a> .....................................</div>
+            </div>
+            <div id="Drafts" class="epicmail">
+                <div id="my_messages">Drafts</div>
+                <hr>
+                <div><a href="#">Kindly resend me</a> .....................</div>
+                <div id="button-draft">
+                    <button type="submit" class="newbie">Send</button>
+                    <button type="submit" class="create_epic">Delete</button>
+                </div>
+            </div>
+    </div>
+</html>

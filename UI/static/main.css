@@ -1,5 +1,5 @@
 body{
-    margin: 0px;
+    margin: auto;
     background-size: cover;
     background-color: #bd9db3;
     padding-right: 0;
@@ -74,7 +74,7 @@ input:hover{
 
 a {
   text-decoration: none; 
-  font-size: 1.3em; 
+  font-size: 1.1em; 
 }
 
 a:hover{

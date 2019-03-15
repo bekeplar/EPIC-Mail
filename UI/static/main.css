@@ -59,7 +59,6 @@ input {
     border-radius: 5px;
     text-align: center;
     margin: 10px  10px;
-    /* padding-left: 20%; */
     background-color: rgb(238, 239, 248);
 }
 input:hover{

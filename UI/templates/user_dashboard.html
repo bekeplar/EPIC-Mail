@@ -7,11 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../static/style.css" />
 </head>
-<epicmail>
-    <div class="epic">
+<body>
+    <div id="epic">
             <header>
                 <h1>EpicMail</h1>
             </header>
+            <heder id="topy">
+                    <div class="top">
+                        <a href="index.html">home</a>
+                        <a href="Admin.html">Groups</a>
+                    </div>    
+                </heder><br><br>
+            <h2>Interract with colleagues allover the world</h2>
             <div class="main_menu">
                 <a href="#">New</a>
                 <a href="#">Inbox</a>
@@ -21,16 +28,17 @@
             <div id="Compose" class="epicmail">
                 <form>
                     <div id="compose_message">Create new message</div>
-                    <hr>
                     <div id="sender"><input type="email" required placeholder="From" ></div>
-                    <hr>
-                    <div id="reciever"><input type="email"required placeholder="To" ></div>
-                    OR
-                    <hr>
-                    <div id="reciever"><input type="name"placeholder="Group" ></div>
-                     <hr>
-                    <div id="subject"><input type="text"required placeholder="Subject"></div>
-                     <hr>
+                    <div id="reciever"><input type="email"placeholder="To individual" ></div>
+                    <div id="selector">
+                    <label>send to a group</label>
+                        <select>
+                            <option>Code-benders</option>
+                            <option>Andelan</option>
+                            <option>Magicians</option>
+                        </select>
+                   </div>
+                    <div id="subject"><input type="text"required placeholder="Subject"></div><br>
                     <div class="button">
                         <button type="submit" class="newbie">Send</button>
                         <button type="submit" class="create_epic">Save as Draft</button>
@@ -43,7 +51,6 @@
                 <div><a href="#">Andela21 Expression</a> ..............................</div>
                 <hr>
                 <div><a href="#">Digest Africa</a> ................................</div>
-                <hr>
             </div>
             <div id="Sent" class="epicmail">
                 <div id="my_messages">Sent</div>

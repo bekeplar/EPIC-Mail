@@ -5,14 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>EpicMail Admin!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../static/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../static/style.css" />
 </head>
 <body>
     <div class="epic">
         <header>
             <h1>EpicMail</h1>
         </header>
-        <div class="dare">
+        <heder id="topy">
+                <div class="top">
+                    <a href="index.html">home</a>
+                    <a href="signup.html">signup</a>
+                    <a href="user_dashboard.html">messages</a>
+                </div>    
+        </heder><br><br>
+        <h2>Welcome to admin's dashboard!</h2>
+                <div class="epicmail">
+                        <form>
+                            <div id="compose_message">New Group</div>
+                            <input type="text" placeholder="Name of the group">
+                            <div class="button">
+                                    <button type="submit">Create</button>
+                                </div>
+                            <input type="text" placeholder="search user..." name="search">
+                            <div class="button">
+                                    <button type="submit">search</button>
+                            </div>
+                        </form><br>
+                        <div id="members">
+                            <label>My contacts</label><br><br>
+                            <div id="contact">
+                                <input type="radio"> bekeplar<br>
+                                <input type="radio"> Bekalaze<br>
+                                <input type="radio"> harriet<br>
+                            </div>
+                            </div>
+                            <div class="button">
+                                <button type="submit" class="newbie">Add member(s)</button>
+                                <button type="submit" class="create_epic">Delete member(s)</button>
+                            </div><br><br>
+                    </div>
                 
         </div>
     </div>

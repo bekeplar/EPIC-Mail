@@ -1,7 +1,7 @@
 body{
     margin: auto;
     background-size: cover;
-    background-color: #dfded9;
+    background-image: url("../static/images/img.jpg");
     padding-right: 0;
 }
 
@@ -11,15 +11,15 @@ header, h1{
 }
 
 h2{
-    color: white;
-    \
-    ]
+    color: red;
+    word-spacing: 5px;
+    text-shadow: 1px 2px black;
     text-align: center;
     padding-left: 25%;
     padding-right: 25%;
     padding-bottom: 1%;
     font-family: helvetica, 'Arial Narrow Bold', sans-serif;
-    font-style: italic;
+    font-style:oblique;
 }
 
 .top{
@@ -71,7 +71,7 @@ button {
     text-align: center;
     width: 40%;
     font-size: 120%;
-    background-color: rgb(226, 231, 222);
+    background-color: green;
     margin-bottom: 10%;
     margin-left: 20%;
 } 
@@ -107,3 +107,50 @@ a {
 a:hover{
     color: rgb(218, 25, 57);
 }
+
+@media only screen and (max-width: 768px) {
+    body{
+        margin: auto;
+        background-size: cover;
+        background-color: burlywood;
+        padding-right: 0;
+    }
+
+    a{
+        display: block;
+      }
+
+    .dare{
+        padding-right: 25%;
+    }
+      h3{
+          font-size: 90%;
+          font-family: Arial, Helvetica, sans-serif;
+          font-style: italic;
+          font-weight: 200;
+      }
+    
+      .top a{
+          color: rgb(233, 233, 241);
+          background-color: #44448d;
+          border-radius: 2px;
+          padding-bottom: 10%;
+      }
+      a:hover { 
+          color: rgb(161, 27, 132);
+      }
+      
+    
+      h2{
+          color: white;
+          font-size: 80%;
+          word-spacing: 3px;
+      }
+      form{
+          font-size: .8em;
+      }
+
+      input{
+          width: 50%;
+      }
+  }

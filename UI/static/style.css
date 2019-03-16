@@ -10,6 +10,7 @@ h2{
     font-family: 'Arial Narrow Bold', sans-serif;
 }
 header, h1{
+    padding-top: 1%;
     padding-left: 2%;
 }
 
@@ -20,9 +21,10 @@ header, h1{
 .main_menu {
     height: 100%;
     width: 13%;
-    position: fixed;
-    left: 0;
+    position: relative;
+    float: left;
     margin-left: 2%;
+    margin-right:2%;
 }
 
 .top{
@@ -98,8 +100,10 @@ label {
 
 button {
     width: 25%;
+    padding: 2% 2%;
     margin: auto;
     margin-left: 20%;
+    text-align: center;
     border-radius: 5px;
     height: 40px;
     border: none;
@@ -118,7 +122,7 @@ a:hover{
     color: rgb(218, 25, 57);
 }
 
-#button-draft {
+/* #button-draft {
     width: 70%;
     margin-left: 30%;
     border-radius: 5px;
@@ -126,11 +130,11 @@ a:hover{
     border: none;
     margin-top: 2%;
     padding-bottom: 2%;
-}
+} */
 
 
 .epicmail {
-    margin-top: 10px;
+    margin-top: 0px;
     margin-left: 220px;
     font-size: 28px;
     border-radius: 5px;
@@ -183,4 +187,35 @@ select{
 
 #epic{
     padding-bottom: 2%;
+}
+
+@media only screen and (max-width: 768px) {
+    .newbie, .create_epic {
+        width: 20%;
+        margin: auto;
+        margin-left: 8%;
+        height: 10px;
+        border: none;
+        margin-bottom: 4px;
+    }
+    h2{
+        font-size: 90%;
+        word-spacing: 3px;
+    }
+    .epicmail {
+        margin-top: 5px;
+        margin-left: 100px;
+        font-size: 14px;
+        width: 80%;
+        background-color: rgba(247, 233, 158, 0.4);
+        color: white;
+    }
+
+    .main_menu a{
+        font-size: 90%;
+    }
+    button{
+        font-size: 60%;
+        text-align: center;
+    }
 }

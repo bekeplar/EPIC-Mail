@@ -100,6 +100,7 @@ label {
 
 button {
     width: 25%;
+    padding: 2% 2%;
     margin: auto;
     margin-left: 20%;
     text-align: center;
@@ -121,7 +122,7 @@ a:hover{
     color: rgb(218, 25, 57);
 }
 
-#button-draft {
+/* #button-draft {
     width: 70%;
     margin-left: 30%;
     border-radius: 5px;
@@ -129,7 +130,7 @@ a:hover{
     border: none;
     margin-top: 2%;
     padding-bottom: 2%;
-}
+} */
 
 
 .epicmail {
@@ -213,5 +214,8 @@ select{
     .main_menu a{
         font-size: 90%;
     }
-
+    button{
+        font-size: 60%;
+        text-align: center;
+    }
 }

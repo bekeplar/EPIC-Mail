@@ -10,7 +10,7 @@ As EPIC Andelans who work towards advancing human potential and giving back to t
 - Users can send a message to individuals.
 - Users can view their inbox and read messages.
 - Users can retract sent messages.
-- Users can save an email as draft and send it later or delete it. 
+- Users can save an email as draft and send it later or delete it.
 
 
 ## Optional Features
@@ -23,6 +23,10 @@ As EPIC Andelans who work towards advancing human potential and giving back to t
 
 - HTML
 - CSS
+
+## Hosting link
+
+[https://bekeplar.github.io/EPIC-Mail/UI/templates/index.html]
 
 ## Authors
 

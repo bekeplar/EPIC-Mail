@@ -8,6 +8,7 @@ h2{
 h3{
     color: blue;
     text-align: center;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 120%;
 }
 
@@ -244,6 +245,14 @@ span.psw {
   .innerAdd{
     margin: 5% 5% 5% 5%;
     
+  }
+
+  .innerAdd a{
+    color: blue;
+  }
+
+  .innerAdd a:hover{
+    color: black;
   }
   
   .close:hover {

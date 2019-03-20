@@ -1,43 +1,32 @@
 <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="utf-8" />
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <title>EpicMail reset!</title>
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="stylesheet" type="text/css" media="screen" href="../static/main.css" />
-        </head>
-        <body>
-            <div class="epic">
-                <header>
-                    <h1>EpicMail</h1>
-                </header>
-                <heder id="topy">
-                        <div class="top">
-                            <a href="index.html">login</a>
-                            <a href="signup.html">signup</a>
-                        </div>    
-                    </heder><br>
-                <h2>Communication made easy</h2>
-                <div class="dare">
-                        <form action="index.html">
-                            <div class="rectangle">
-                                <label for="email">
-                                    Email
-                                </label><br>
-                                <input type="email" required placeholder="email@gmail.com">
-                                <label for="password">
-                                    Password
-                                </label><br>
-                                <input type="password" required placeholder="password">
-                                <label for="password">
-                                    Confirm password
-                                </label><br>
-                                    <input type="password" required placeholder="password"><br><br>
-                                <button type="submit">Reset</button><br>
-                            </div>
-                        </form>
-                </div>
-            </div>
-        </body>
-        </html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="../static/main.css" />  
+    </head>
+    <body>
+
+        <form action="index.html" id="la-fonic">
+        <h2>Password Reset</h2>
+        <div class="input-container">
+            <i class="fa fa-user icon"></i>
+            <input class="input-field" type="text" placeholder="email" name="email">
+        </div>
+
+        <div class="input-container">
+            <i class="fa fa-envelope icon"></i>
+            <input class="input-field" type="password" placeholder="password" name="password">
+        </div>
+        
+        <div class="input-container">
+            <i class="fa fa-key icon"></i>
+            <input class="input-field" type="password" placeholder="Confirm Password" name="password">
+        </div>
+
+        <button type="submit" class="btn">Reset</button>
+        </form>
+
+    </body>
+</html>

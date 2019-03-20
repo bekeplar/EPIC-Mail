@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>User dashboard!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../static/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../static/main.css" />
 </head>
 <body>
     <div id="epic">
@@ -13,59 +13,44 @@
                 <h1>EpicMail</h1>
             </header>
             <heder id="topy">
-                    <div class="top">
+                    <div class="la-top">
                         <a href="index.html">home</a>
                         <a href="Admin.html">Admin</a>
                     </div>    
                 </heder><br><br>
-            <h2>Interract with colleagues allover the world</h2>
-            <div class="main_menu">
-                <a href="#">New</a>
-                <a href="#">Inbox</a>
-                <a href="#"">Sent</a>
-                <a href="#">Drafts</a>
-            </div>
             <div id="Compose" class="epicmail">
-                <form>
-                    <div id="compose_message">Create new message</div>
+                <form id="la-la-create">
+                    <h4>Create new message</h4>
                     <div id="sender"><input type="email" required placeholder="From" ></div>
                     <div id="reciever"><input type="email"placeholder="To individual" ></div>
-                    <div id="selector">
-                    <label>send to a group</label>
-                        <select>
-                            <option>Code-benders</option>
-                            <option>Andelan</option>
-                            <option>Magicians</option>
-                        </select>
-                   </div>
-                    <div id="subject"><input type="text"required placeholder="Subject"></div><br>
+                    <div id="subject"><input type="text"required placeholder="Subject"><br><br>
                     <div class="button-push">
                         <button type="submit" class="newbie">Send</button>
-                        <button type="submit" class="create_epic">Save as Draft</button>
+                        <button type="submit" class="newbie">Save as Draft</button>
                     </div>
                 </form>
             </div>
             <div id="Inbox" class="epicmail">
-                <div id="my_messages">Inbox</div>
+                    <h4>Inbox</h4>
                 <hr>
-                <div><a href="#">Andela21 Expression</a> ..............................</div>
+                <div><a href="#">Andela21 Expression</a></div>
                 <hr>
-                <div><a href="#">Digest Africa</a> ................................</div>
+                <div><a href="#">Digest Africa</a></div>
             </div>
             <div id="Sent" class="epicmail">
-                <div id="my_messages">Sent</div>
+                    <h4>Sent</h4>
                 <hr>
-                <div><a href="#">My Andela Application</a> ...........................</div>
+                <div><a href="#">My Andela Application</a></div>
                 <hr>
-                <div><a href="#">Mtn weekly data</a> .....................................</div>
+                <div><a href="#">Mtn weekly data</a></div>
             </div>
             <div id="Drafts" class="epicmail">
-                <div id="my_messages">Drafts</div>
+                    <h4>Drafts</h4>
                 <hr>
                 <div><a href="#">Kindly resend me</a> .....................</div>
-                <div id="button-draft">
+                <div class="button-push">
                     <button type="submit" class="newbie">Send</button>
-                    <button type="submit" class="create_epic">Delete</button>
+                    <button type="submit" class="newbie">Delete</button>
                 </div>
             </div>
     </div>

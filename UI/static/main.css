@@ -1,30 +1,335 @@
-body{
-    margin: auto;
-    background-size: cover;
-    background-image: url("../static/images/img.jpg");
-    padding-right: 0;
-}
+body {font-family: Arial, Helvetica, sans-serif;}
 
-header, h1{
-    padding-top: 1%;
-    padding-left: 2%;
-}
 
 h2{
-    color: red;
-    word-spacing: 5px;
-    text-shadow: 1px 2px black;
-    text-align: center;
-    padding-left: 25%;
-    padding-right: 25%;
-    padding-bottom: 1%;
-    font-family: helvetica, 'Arial Narrow Bold', sans-serif;
-    font-style:oblique;
+    font-size: 150;
 }
 
-.top{
+h3{
+    color: blue;
+    text-align: center;
+    font-size: 120%;
+}
+
+#la-fonix{
+  max-width:500px;
+  margin:auto;
+}
+
+#la-fonic{
+  max-width:500px;
+  margin:auto;
+  padding-top: 10%;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color:blue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: blue;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+
+.input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .icon {
+    padding: 10px;
+    background: dodgerblue;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+  }
+  
+  .input-field:focus {
+    border: 2px solid dodgerblue;
+  }
+  
+  /* Set a style for the submit button */
+  .btn {
+    background-color: dodgerblue;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
+
+  <!-- body {
+    margin: 0;
+    min-width: 250px;
+  } -->
+  
+  /* Include the padding and border in an element's total width and height */
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Remove margins and padding from the list */
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the list items */
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Set all odd list items to a different color (zebra-stripes) */
+  ul li:nth-child(odd) {
+    background: #f9f9f9;
+  }
+  
+  /* Darker background-color on hover */
+  ul li:hover {
+    background: #ddd;
+  }
+  
+  /* When clicked on, add a background color and strike out text */
+  ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  /* Add a "checked" mark when clicked on */
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+  
+  /* Style the close button */
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .innerAdd{
+    margin: 5% 5% 5% 5%;
+    
+  }
+  
+  .close:hover {
+    background-color: blue;
+    color: white;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: blue;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Clear floats after the header */
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the input */
+  input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+  }
+  
+  /* Style the "Add" button */
+  .addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+  
+  .addBtn:hover {
+    background-color: #bbb;
+  }
+
+  .input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .icon {
+    padding: 10px;
+    background: dodgerblue;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+  }
+  
+  .input-field:focus {
+    border: 2px solid dodgerblue;
+  }
+  
+  /* Set a style for the submit button */
+  .btn {
+    background-color: dodgerblue;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
+
+  .top{
     margin: 2%;
-    margin-top: 0%;
+    margin-top: -5%;
     font-size: 1.5em;
     float: right;
 }
@@ -33,124 +338,165 @@ h2{
     text-decoration: none;
     background-color: green;
     color: white;
-    padding: 5px 20px;
+    padding: 15% 20%;
     border-radius: 5px;
     text-align: center;
 } 
 
-.dare {
-    padding-left: 20%;
-    padding-right: 25%;
-    padding-bottom: 10%;
-    padding-top: 0%;
-    margin-left: 5%;   
+h4{
+  color: blue;
+  text-align: center;
+  font-size: 100%;
 }
 
-
-h3{
-    font-size: 90%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
-    font-weight: 200;
+.la-top{
+  margin: 2%;
+  margin-top: 0%;
+  font-size: 1.5em;
+  float: right;
+  margin-bottom: 30%;
 }
 
-form{
-    border: 1px solid rgb(216, 200, 200);
-    border-radius: 12px;
-    width: 100%;
-    margin-left: 10% ;
-    background-color: rgb(177, 177, 175);
-    margin-right: 60%;
-    font-size: 1.2em;
-   
+.la-top a{
+  text-decoration: none;
+  background-color: blue;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 5px;
+  text-align: center;
 } 
 
-button {
-    border-radius: 12px;
-    padding: 3% 3%;
-    text-align: center;
-    width: 40%;
-    font-size: 120%;
-    background-color: green;
-    margin-bottom: 10%;
-    margin-left: 20%;
-} 
-button:hover{
-    background-color: #1cb7e2;
+.button-push {
+  margin-left: 13%;
+  margin-top: 2%;
+  padding-bottom: 2%;
 }
 
-input {
-    display: block;
-    width: 80%;
-    padding: 15px 25px;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
-    margin: 10px  10px;
-    background-color: rgb(238, 239, 248);
-}
-input:hover{
-    background-color: rgb(149, 181, 184);
-    color: azure;
-}
-.rectangle{
-    padding-left: 15%;
-    margin-bottom: 2%;
+.newbie{
+  width: 20%;
+  margin: auto;
+  margin-left: 8%;
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  background-color: rgb(221, 223, 222);
+  color: black;
 }
 
-a {
-  text-decoration: none; 
-  font-size: 1.1em; 
+.create_epic {
+  width: 20%;
+  margin: auto;
+  padding-right: 8%;
+  height: 40px;
+  border: none;
+  margin-bottom: 10px;
 }
 
-a:hover{
-    color: rgb(218, 25, 57);
+#la-la-create input {
+  display: block;
+  width: 50%;
+  border-radius: 4px;
+  height: 40px;
+  padding: 7px;
+  margin-top: 9px;
+  margin-bottom: 4px;
+  margin-left: 20%;
+  border: none;
+  background-color: rgb(238, 239, 248);
 }
 
-@media only screen and (max-width: 768px) {
-    body{
-        margin: auto;
-        background-size: cover;
-        background-color: burlywood;
-        padding-right: 0;
-    }
 
-    a{
-        display: block;
-      }
 
-    .dare{
-        padding-right: 25%;
-    }
-      h3{
-          font-size: 90%;
-          font-family: Arial, Helvetica, sans-serif;
-          font-style: italic;
-          font-weight: 200;
-      }
-    
-      .top a{
-          color: rgb(233, 233, 241);
-          background-color: #44448d;
-          border-radius: 2px;
-          padding-bottom: 10%;
-      }
-      a:hover { 
-          color: rgb(161, 27, 132);
-      }
-      
-    
-      h2{
-          color: white;
-          font-size: 80%;
-          word-spacing: 3px;
-      }
-      form{
-          font-size: .8em;
-      }
+.newbie:hover{
+  background-color: blue;
+}
 
-      input{
-          width: 50%;
-      }
+
+
+.epicmail a{
+  margin-left: 5%;
+  margin-right: 5%;
+  text-decoration: none;
+  font-size: 80%;
+}
+
+
+
+
+.epicmail {
+  margin-top: 0px;
+  margin-left: 220px;
+  font-size: 28px;
+  border-radius: 5px;
+  /* display: none; */
+  width: 80%;
+  color: white;
+  margin-bottom: 5%;
+}
+
+
+#compose_message, #my_messages{
+  text-align: center;
+  font-size: 30px;
+}
+
+
+
+
+.create_epic{
+  margin-left: 40.9%;
+}
+
+#epic{
+  padding-bottom: 2%;
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
   }
+  .cancelbtn {
+     width: 100%;
+  }
+
+  .newbie, .create_epic {
+    width: 20%;
+    margin: auto;
+    margin-left: 8%;
+    height: 10px;
+    border: none;
+    margin-bottom: 4px;
+}
+
+#la-la-create h4{
+    padding-left: 18%;
+}
+.epicmail {
+    margin-top: 5px;
+    margin-left: 100px;
+    font-size: 14px;
+    width: 80%;
+}
+
+.main_menu a{
+    font-size: 90%;
+}
+button{
+    font-size: 60%;
+    text-align: center;
+}
+}
+}

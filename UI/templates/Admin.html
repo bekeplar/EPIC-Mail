@@ -1,57 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>EpicMail Admin!</title>
+<html>
+    <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../static/style.css" />
-</head>
-<body>
-    <div class="epic">
-        <header>
-            <h1>EpicMail</h1>
-        </header>
-        <heder id="topy">
-                <div class="top">
-                    <a href="index.html">home</a>
-                    <a href="signup.html">signup</a>
-                    <a href="user_dashboard.html">messages</a>
-                </div>    
-        </heder><br><br>
-        <h2>Welcome to admin's dashboard!</h2>
-        <div class="main_menu">
-            <a href="#">Groups</a>
-            <a href="#">create</a>
-            <a href="#"">Archived</a>
+    <link rel="stylesheet" type="text/css" media="screen" href="../static/main.css" />
+    <script src="../JS/epic.js"></script>
+    </head>
+    <body>
+        <div class="top">
+          <a href="index.html">Logout</a>
+          </div>   
+          <div class="innerAdd">
+        <div id="myDIV" class="header">
+          <h2 style="margin:5px">Group Members</h2>
+          <input type="text" id="myInput" placeholder="Member name">
+          <span onclick="newElement()" class="addBtn">Add</span>
         </div>
-                <div class="epicmail">
-                        <form>
-                            <div id="compose_message">New Group</div>
-                            <input type="text" placeholder="Name of the group">
-                            <div class="button">
-                                    <button type="submit">Create</button>
-                                </div>
-                            <input type="text" placeholder="search user..." name="search">
-                            <div class="button">
-                                    <button type="submit">search</button>
-                            </div>
-                        </form><br>
-                        <div id="members">
-                            <label>My contacts</label><br><br>
-                            <div id="contact">
-                                <input type="radio"> bekeplar<br>
-                                <input type="radio"> Bekalaze<br>
-                                <input type="radio"> harriet<br>
-                            </div>
-                            </div>
-                            <div class="button-push">
-                                <button type="submit" class="newbie">Add</button>
-                                <button type="submit" class="create_epic">Delete</button>
-                            </div><br><br>
-                    </div>
-                
-        </div>
-    </div>
-</body>
+        
+        <ul id="myUL">
+          <li>bekeplar</li>
+          <li>Harriet</li>
+          <li>Paul</li>
+          <li>Ronald</li>
+          <li>Ricky</li>
+          <li>Doreen</li>
+        </ul>
+      </div>
+    </body>
 </html>

@@ -5,19 +5,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../static/main.css" />
-    <script src="../JS/epic.js"></script>
+    <title>Login</title>
     </head>
   <body>
-    <div class="innerAdd">
-
-      <h2>EpicMail</h2>
-      <h3>Epic mail is an application that enable people communicate over the internet allover the world</h3>
-      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-      Don't have Account?<a href="signup.html">Signup</a>
-    </div>
-      <div id="id01" class="modal">
+      <header>
+          <h1>EpicMail</h1>
+      </header>
+      
+      <div  class="modal">
           <form class="modal-content animate" action="user_dashboard.html">
-
               <div class="container">
                 <label for="email"><b>Email &</b></label>
                 <input type="text" placeholder="Enter Email" name="email" required>
@@ -34,10 +30,11 @@
               </div>
 
               <div class="container" style="background-color:#f1f1f1">
-                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                <span class="psw">Forgot <a href="reset.html">password?</a></span>
-                
+                <button class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot password? <a href="reset.html">Reset</a></span><br>
+                <span class="sgn">Don't have an account<a href="signup.html">Signup</a></span>
               </div>
+              <h3>Epic mail is an application that enable people communicate over the internet allover the world!</h3>
           </form>
     </div>
   </body>

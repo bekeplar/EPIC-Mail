@@ -1,15 +1,25 @@
 body {font-family: Arial, Helvetica, sans-serif;}
 
+header, h1{
+  padding-top: 1%;
+  font-size: 180%;
+  padding-left: 2%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif 
+}
 
 h2{
-    font-size: 150;
+    font-size: 120;
 }
 
 h3{
     color: blue;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-weight: italic; 
+    text-shadow: #555;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 120%;
+    padding-bottom: 5%;
 }
 
 #la-fonix{
@@ -70,10 +80,7 @@ button:hover {
   position: relative;
 }
 
-img.avatar {
-  width: 40%;
-  border-radius: 50%;
-}
+
 
 .container {
   padding: 16px;
@@ -85,9 +92,8 @@ span.psw {
 }
 
 .modal {
-  display: none; 
-  position: fixed; 
-  z-index: 1; /* Sit on top */
+  position: absolute;
+  /* z-index: 1; Sit on top */
   left: 0;
   top: 0;
   width: 100%; 
@@ -154,7 +160,7 @@ span.psw {
     border: 2px solid dodgerblue;
   }
   
-  /* Set a style for the submit button */
+   /* Set a style for the submit button */
   .btn {
     background-color: dodgerblue;
     color: white;
@@ -487,6 +493,21 @@ h4{
      width: 100%;
   }
 
+  .la-top a{
+    background-color: blue;
+    color: white;
+    padding: 5% 5% 5% 5%;
+    border-radius: 5px;
+    text-align: center;
+  } 
+
+  .la-top{
+    font-size: .8em;
+    float: right;
+    margin-bottom: 30%;
+  }
+  
+
   .newbie, .create_epic {
     width: 20%;
     margin: auto;
@@ -500,18 +521,27 @@ h4{
     padding-left: 18%;
 }
 .epicmail {
-    margin-top: 5px;
-    margin-left: 100px;
-    font-size: 14px;
-    width: 80%;
+    margin-top: 4px;
+    margin-left: 8%;
+    font-size: 8;
+    width: 20%;
 }
 
-.main_menu a{
-    font-size: 90%;
+
+h3{
+  display: none;
+  font-size: 50%;
 }
+
 button{
     font-size: 60%;
     text-align: center;
 }
-}
+
+header h1{
+  font-size: 50%;
+  padding-left: 20%;
+
+} 
+
 }

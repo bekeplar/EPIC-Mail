@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" media="screen" href="../static/main.css" />  
+        <title>reset</title>
     </head>
     <body>
 
@@ -12,20 +13,21 @@
         <h2>Password Reset</h2>
         <div class="input-container">
             <i class="fa fa-user icon"></i>
-            <input class="input-field" type="text" placeholder="email" name="email">
+            <input class="input-field" type="text" required placeholder="email" name="email">
         </div>
 
         <div class="input-container">
             <i class="fa fa-envelope icon"></i>
-            <input class="input-field" type="password" placeholder="password" name="password">
+            <input class="input-field" type="password" required placeholder="password" name="password">
         </div>
         
         <div class="input-container">
             <i class="fa fa-key icon"></i>
-            <input class="input-field" type="password" placeholder="Confirm Password" name="password">
+            <input class="input-field" type="password" required placeholder="Confirm Password" name="password">
         </div>
 
         <button type="submit" class="btn">Reset</button>
+        <span class="psw">Or maybe <a href="index.html">Login</a></span>
         </form>
 
     </body>

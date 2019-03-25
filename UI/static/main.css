@@ -156,6 +156,29 @@ span.psw {
     padding: 10px;
     outline: none;
   }
+
+  .main_menu {
+    height: 100%;
+    width: 13%;
+    position: fixed;
+    left: 0;
+    margin-left: 2%;
+}
+
+
+.main_menu a {
+    text-decoration: none;
+    display: block;
+    font-size: 135%;
+    padding-bottom: 2%;
+    border-radius: 5px;
+    padding-left: 6%;
+    padding-right: 2%; 
+    background-color: blue;
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+}
   
   .input-field:focus {
     border: 2px solid dodgerblue;

@@ -1,41 +1,41 @@
 <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="utf-8" />
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <title>EpicMail login!</title>
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="stylesheet" type="text/css" media="screen" href="../static/main.css" />
-        </head>
-        <body>
-            <div class="epic">
-                <header>
-                    <h1>EpicMail</h1>
-                </header>
-                <heder id="topy">
-                        <div class="top">
-                            <a href="signup.html">signup</a>
-                            <a href="reset.html">Reset</a>
-                        </div>    
-                    </heder><br><br>
-            
-                <h2>Epic mail  is a web app that helps people exchange messages or information over the internet. </h2>
-                    
-                <div class="dare">
-                        <form action="user_dashboard.html">
-                            <div class="rectangle">
-                                <label for="email">
-                                    Email
-                                </label><br>
-                                <input type="email" required placeholder="email@gmail.com">
-                                <label for="password">
-                                    Password
-                                </label><br>
-                                <input type="password" required placeholder="password"><br><br>
-                                <button type="submit">sigin</button>
-                            </div>
-                        </form>
-                </div>
-            </div>
-        </body>
-        </html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../static/main.css" />
+    <title>Login</title>
+    </head>
+  <body>
+      <header>
+          <h1>EpicMail</h1>
+      </header>
+      
+      <div  class="modal">
+          <form class="modal-content animate" action="user_dashboard.html">
+              <div class="container">
+                <label for="email"><b>Email &</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+                <button type="submit">Login</button>
+                <label>
+                 Remember me
+                </label>
+                  <input type="checkbox" checked="checked" name="remember">
+                
+              </div>
+
+              <div class="container" style="background-color:#f1f1f1">
+                <button class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot password? <a href="reset.html">Reset</a></span><br>
+                <span class="sgn">Don't have an account<a href="signup.html">Signup</a></span>
+              </div>
+              <h3>Epic mail is an application that enable people communicate over the internet allover the world!</h3>
+          </form>
+    </div>
+  </body>
+</html>

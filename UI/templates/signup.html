@@ -1,50 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>EpicMail signup!</title>
+<html>
+    <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../static/main.css" />
-</head>
-<body>
-    <div class="epic">
-        <header>
-            <h1>EpicMail</h1>
-        </header>
-        <heder id="topy">
-                <div class="top">
-                    <a href="index.html">home</a>
-                    <a href="index.html">login</a>
-                </div>    
-            </heder><br><br>
-        <div class="dare">
-                <form action="index.html">
-                    <div class="rectangle">
-                        <label for="email">
-                            Email
-                        </label><br>
-                        <input type="email" required placeholder="email@gmail.com">
-                        <label for="name">
-                            firstname
-                        </label><br>
-                        <input type="name" required placeholder="firstname">
-                        <label for="name">
-                                lastname
-                        </label><br>
-                            <input type="name" required placeholder="lastname">
-                        <label for="password">
-                            Password
-                        </label><br>
-                        <input type="password" required placeholder="password">
-                        <label for="password">
-                            Confirm password
-                        </label><br>
-                            <input type="password" required placeholder="password"><br><br>
-                        <button type="submit">signup</button><br>
-                    </div>
-                </form>
-        </div>
-    </div>
-</body>
+    </head>
+  <body>
+      <header>
+          <h1>EpicMail</h1>
+      </header>
+        <form action="index.html" id="la-fonix">
+          <h2>User Signup</h2>
+          <div class="input-container">
+            <i class="fa fa-user icon"></i>
+            <input class="input-field" type="text" required placeholder="firstname" name="firstname">
+          </div>
+          <div class="input-container">
+            <i class="fa fa-user icon"></i>
+            <input class="input-field" type="text" required placeholder="lastname" name="lastname">
+          </div>
+          <div class="input-container">
+            <i class="fa fa-envelope icon"></i>
+            <input class="input-field" type="text" placeholder="Email" name="email">
+          </div>
+          <div class="input-container">
+            <i class="fa fa-key icon"></i>
+            <input class="input-field" type="password" required placeholder="Password" name="psw">
+          </div>
+          <div class="input-container">
+            <i class="fa fa-key icon"></i>
+            <input class="input-field" type="password" required placeholder="Confirm Password" name="psw">
+          </div>
+          <button type="submit" class="btn">Signup</button>
+          <span class="psw">Already have an account?<a href="index.html">Login</a></span>
+          
+        </form>
+
+  </body>
 </html>

@@ -1,57 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>User dashboard!</title>
+    <title>Users dashoard!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../static/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../static/user.css">
+    <script src="../JS/epic.js"></script>
 </head>
+
 <body>
-    <div id="epic">
-            <header>
-                <h1>EpicMail</h1>
-            </header>
-            <heder id="topy">
-                    <div class="la-top">
-                        <a href="index.html">home</a>
-                        <a href="Admin.html">Admin</a>
-                    </div>    
-                </heder><br><br>
-            <div id="Compose" class="epicmail">
-                <form id="la-la-create">
-                    <h4>Create new message</h4>
-                    <div id="sender"><input type="email" required placeholder="From" ></div>
-                    <div id="reciever"><input type="email"placeholder="To individual" ></div>
-                    <div id="subject"><input type="text"required placeholder="Subject"><br><br>
-                    <div class="button-push">
-                        <button type="submit" class="newbie">Send</button>
-                        <button type="submit" class="newbie">Save as Draft</button>
-                    </div>
-                </form>
-            </div>
-            <div id="Inbox" class="epicmail">
-                    <h4>Inbox</h4>
-                <hr>
-                <div><a href="#">Andela21 Expression</a></div>
-                <hr>
-                <div><a href="#">Digest Africa</a></div>
-            </div>
-            <div id="Sent" class="epicmail">
-                    <h4>Sent</h4>
-                <hr>
-                <div><a href="#">My Andela Application</a></div>
-                <hr>
-                <div><a href="#">Mtn weekly data</a></div>
-            </div>
-            <div id="Drafts" class="epicmail">
-                    <h4>Drafts</h4>
-                <hr>
-                <div><a href="#">Kindly resend me</a> .....................</div>
-                <div class="button-push">
-                    <button type="submit" class="newbie">Send</button>
-                    <button type="submit" class="newbie">Delete</button>
-                </div>
-            </div>
+    <div class="header">
+        <a href="#" class="logo"><span></span>Epic</span><span>Mail</span></a>
+        <div class="header-right">
+            <a href="group.html">Admin</a>
+            <a href="index.html">Logout</a>
+        </div>
     </div>
+    <div class="body">
+        <div class="sidebar">
+            <a href="#" class="tablink" onclick="openPage('compose')">New</a>
+            <a href="#" class="tablink" onclick="openPage('inbox')" id="defaultOpen">Inbox</a>
+            <a href="#" class="tablink" onclick="openPage('sent')">Sent</a>
+            <a href="#" class="tablink" onclick="openPage('draft')">Drafts</a>
+        </div>
+        <div id="compose" class="epicmail">
+            <form>
+                <div id="la-fonic">Create New message</div>
+                <hr>
+                <div id="reciever"><input type="email" placeholder="To" required></div>
+                <hr>
+                <div id="subject"><input type="text" placeholder="Subject"></div>
+                <textarea>Message body</textarea>
+                <div class="button">
+                    <button type="submit" class="send_button">Save Draft</button>
+                    <button type="submit" class="save_button">Send</button>
+                </div>
+            </form>
+        </div>
+        <div id="inbox" class="epicmail">
+            <div id="la-fonix">My Inbox</div>
+            <hr>
+            <div><a href="#"onclick="openPage('la-boni')">Andela21 Expression</a></a></div>
+            <hr>
+            <div><a href="#"onclick="openPage('la-boni')">Digest Africa</a></div>
+           
+        </div>
+        <div id="sent" class="epicmail">
+            <div id="la-fonix">Sent</div>
+            <hr>
+            <div><a href="#"onclick="openPage('la-boni')">My Andela Application</a></div>
+            <hr>
+            <div><a href="#"onclick="openPage('la-boni')">Mtn weekly data</a></div>
+            <hr>
+        </div>
+        <div id="draft" class="epicmail">
+            <div id="la-fonix">Drafts</div>
+            <hr>
+            <div><a href="#"onclick="openPage('la-boni')">Kindly resend me</a></div>
+            <hr>
+            <div class="button">
+                <button type="submit" class="send_button">Delete</button>
+                <button type="submit" class="save_button">Send</button>
+            </div>
+        </div>
+       
+        <div id="la-boni" class="epicmail">
+            <textarea name="" id="" cols="20" rows="5">Reply</textarea>
+            <div class="button">
+                <button type="submit" class="send_button">Reply</button>
+                <button type="submit" class="save_button">Delete</button>
+            </div>
+        </div>
+    <script>
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+
 </html>

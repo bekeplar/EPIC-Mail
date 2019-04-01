@@ -388,6 +388,26 @@ span.psw {
     text-align: center;
 } 
 
+.error {
+  display: none;
+  font-size: x-small;
+  color: #e08989;
+  font-weight: bold;
+  padding-top: 0.25em;
+}
+
+.hide {
+  display: none;
+}
+
+.success {
+  display: none;
+  font-size: small;
+  color: #31e071;
+  font-weight: bold;
+  padding-top: 0.25em;
+}
+
 h4{
   color: blue;
   text-align: center;

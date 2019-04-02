@@ -64,6 +64,28 @@ form button {
     margin-top: 20px;
 }
 
+.error {
+    display: none;
+    font-size: 60%;
+    color: #e08989;
+    font-weight: bold;
+    padding-top: 0.25em;
+    padding-left: 20%;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .success {
+    display: none;
+    font-size: small;
+    color: hsl(142, 90%, 51%);
+    font-weight: bold;
+    padding-top: 0.30em;
+  }
+  
+
 form button:hover{
     background-color: black;
     color: blue;

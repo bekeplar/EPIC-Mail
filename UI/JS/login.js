@@ -38,7 +38,8 @@ function login() {
                 document.getElementById("error").style.display = "none";
                 document.getElementById("success").style.display = "block";
                 document.getElementById("success").innerHTML = data["data"][0].success;
-                localStorage.setItem("EpicMailToken", data["data"][0].token);
+                token = data.data[0].token;
+                localStorage.setItem("token", token);
 
                 window.setTimeout(function () {
                     window.location.replace("./user_dashboard.html");

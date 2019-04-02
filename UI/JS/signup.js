@@ -15,7 +15,7 @@ function validatePasswordStrength() {
 
     } else {
         passwordError.style.display = "block";
-        passwordError.innerHTML = "Password Must contain a Minimum 8 characters" +
+        passwordError.innerHTML = "Password Must contain a Minimum of 8 characters" +
             " with atleast one upper case letter, atleast on lower case letter and atleast one number.";
         password.setCustomValidity("Weak Password.");
 

@@ -42,21 +42,6 @@ confirmPassword.onblur = validatePassword;
 confirmPassword.onkeyup = validatePassword;
 
 
-userName.onkeyup = function () {
-    const userNameError = document.getElementById("username-error");
-
-    if (/^(?=.*[a-zA-Z0-9])((?!\W+).){5,}$/.test(userName.value)) {
-        userNameError.style.display = "none";
-        userName.setCustomValidity("");
-    } else {
-        userNameError.style.display = "block";
-        userNameError.innerHTML = "Username must contain atleast five alphabetic characters";
-        userName.setCustomValidity("Invalid Username.");
-
-    }
-
-};
-
 firstName.onkeyup = function () {
     const firstNameError = document.getElementById("firstname-error");
 

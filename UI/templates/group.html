@@ -20,17 +20,15 @@
           <h2 style="margin:5px">Create Group</h2>
           <input type="text" id="myInput" placeholder="GroupName">
           <span onclick="createGroup()" class="addBtn">Add</span>
+          <span onclick="getGroups()" class="addBtn">My groups</span>
           <span class="error" id="group_name-error"></span>
         </div>
         
-        <ul id="myUL">
-          <li>Tetraens</li>
-          <li>Andela21</li>
-          <li>CohortLegacy</li>
-        </ul>
+        <ul id="myUL"></ul>
         <button><a href="Admin.html"><h2 class="ma-ma-mia">Add Member(s)</h2></a></button>
 
       </div>
     </body>
     <script src="../static/JS/create_group.js"></script>
+    <script src="../static/JS/get_groups.js"></script>
 </html>

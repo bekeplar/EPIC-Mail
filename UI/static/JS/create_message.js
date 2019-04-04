@@ -57,7 +57,7 @@ Emailmessage.onkeyup = function () {
 function createMessage() {
     const submitProgress = document.getElementById("submit_progress");
     submitProgress.style.display = 'block';
-
+    // const url = "https://kepicmail.herokuapp.com/api/v2/messages";
     const url = "http://127.0.0.1:5000/api/v2/messages";
     const newMessage = {
         receiver: reciever.value,
@@ -106,4 +106,15 @@ function createMessage() {
         .catch((error) => console.log(error));
 
 }
+
+
+// function for manipulating the user_dashboard
+function openPage(PageName){
+    var i, epicmail
+    epicmail = document.getElementsByClassName("epicmail")
+    for (i = 0; i < epicmail.length; i++){
+        epicmail[i].style.display = "none"
+    }
+    document.getElementById(PageName).style.display = "block"
+  }
 

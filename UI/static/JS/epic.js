@@ -46,12 +46,3 @@ function newElement() {
     }
   }
 }
-// function for manipulating the user_dashboard
-function openPage(PageName){
-  var i, epicmail
-  epicmail = document.getElementsByClassName("epicmail")
-  for (i = 0; i < epicmail.length; i++){
-      epicmail[i].style.display = "none"
-  }
-  document.getElementById(PageName).style.display = "block"
-}

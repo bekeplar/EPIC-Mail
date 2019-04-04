@@ -486,7 +486,14 @@ h4{
   font-size: 80%;
 }
 
-
+.error {
+  display: none;
+  font-size: 80%;
+  color: #e08989;
+  font-weight: bold;
+  padding-top: 0.25em;
+  padding-left: 20%;
+}
 
 
 .epicmail {

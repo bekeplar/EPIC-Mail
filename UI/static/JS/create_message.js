@@ -85,7 +85,7 @@ function createMessage() {
             } else if (data.status === 401) {
                 displayError(data.error);
                 window.setTimeout(function () {
-                    window.location.replace("../index.html");
+                    window.location.replace("../templates/index.html");
                 }, 5000);
 
 
@@ -108,13 +108,4 @@ function createMessage() {
 }
 
 
-// function for manipulating the user_dashboard
-function openPage(PageName){
-    var i, epicmail
-    epicmail = document.getElementsByClassName("epicmail")
-    for (i = 0; i < epicmail.length; i++){
-        epicmail[i].style.display = "none"
-    }
-    document.getElementById(PageName).style.display = "block"
-  }
 

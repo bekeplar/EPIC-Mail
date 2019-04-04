@@ -276,6 +276,16 @@ span.psw {
     
   }
 
+  .name{
+    background: red;
+    width: 60px;
+  }
+
+.id{
+  background: yellow;
+  width: 50px;
+}
+
   .innerAdd a{
     color: blue;
   }

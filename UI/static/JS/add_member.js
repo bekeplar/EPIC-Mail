@@ -11,31 +11,21 @@ function displayError(dataArray) {
 }
 
 
-const Newgroup_name = document.getElementById("group_name");
+const Newuser_id = document.getElementById("userid");
 
 
-Newgroup_name.onkeyup = function () {
-    const group_nameError = document.getElementById('group_name-error');
+Newuser_id .onkeyup = function () {
+    const useridError = document.getElementById('userid-error');
+   
     
-    if (Newgroup_name == "") {
-        group_nameError.style.display = "block";
-        group_nameError.innerHTML = "group name must not contain space.";
-        Newgroup_name.setCustomValidity("Invalid group name provided.");
-
-    } else if (Newgroup_name.value.length < 4) {
-        group_nameError.style.display = "block";
-        group_nameError.innerHTML = "group_name must contain atleast 4 characters";
-        Newgroup_name.setCustomValidity("Invalid group name provided.");
-
-
-    } else if (Newgroup_name.value.length > 100) {
-        group_nameError.style.display = "block";
-        group_nameError.innerHTML = "group_name can not contain more than 100 characters";
-        Newgroup_name.setCustomValidity("Invalid group name provided.");
+    if (Newuserid !==isNaN()) {
+        useridError.style.display = "block";
+        useridError.innerHTML = "user Id must be a number.";
+        Newuserid.setCustomValidity("Invalid userId provided.");
 
     } else {
-        group_nameError.style.display = "none";
-        Newgroup_name.setCustomValidity("");
+        useridError.style.display = "none";
+        Newuserid.setCustomValidity("");
 
     }
 
@@ -43,17 +33,17 @@ Newgroup_name.onkeyup = function () {
 
 
 
-function createGroup() {
+function addMember() {
     const submitProgress = document.getElementById("submit_progress");
     submitProgress.style.display = 'block';
     
-    let group_name = document.getElementById("myInput")
-    const url = "http://127.0.0.1:5000/api/v2/groups";
-    const newGroup = {
-        group_name: group_name.value,
+    let userid = document.getElementById("myInput")
+    const url = "http://127.0.0.1:5000/api/v2/groups/";
+    const newMember = {
+        userid: userid.value,
 
     };
-    console.log(newGroup)
+    console.log(newMember)
     let token = localStorage.getItem("token");
     fetch(url, {
         method: "POST",
@@ -61,7 +51,7 @@ function createGroup() {
             'Authorization': `Bearer ${token}`,
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify(newGroup),
+        body: JSON.stringify(newMember),
     })
         .then((response) => response.json())
         .then((data) => {
@@ -69,7 +59,7 @@ function createGroup() {
                 submitProgress.style.display = 'hide';
                 displayError(data.error);
                 window.setTimeout(function () {
-                    window.location.replace("../templates/group.html");
+                    window.location.replace("../templates/Admin.html");
                 }, 5000);
 
             } else if (data.status === 401) {
@@ -78,15 +68,13 @@ function createGroup() {
                     window.location.replace("..templates/index.html");
                 }, 5000);
 
-
             } else if (data.status === 201) {
                 //on success
                 submitProgress.style.display = 'hide';
 
                 let successMsg = data["data"][0]["success"];
                 document.getElementById('success_msg').style.display = "block";
-                document.getElementById('success_msg').innerHTML = "Group created Successfully!";
-                // document.getElementById("myUL").style.display = "hide"
+                document.getElementById('success_msg').innerHTML = "member added Successfully!";
                 window.setTimeout(function () {
                     window.location.replace("../templates/group.html");
                 }, 5000);;

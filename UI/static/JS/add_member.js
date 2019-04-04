@@ -38,7 +38,7 @@ function addMember() {
     submitProgress.style.display = 'block';
     
     let userid = document.getElementById("myInput")
-    const url = "http://127.0.0.1:5000/api/v2/groups/";
+    const url = "https://kepicmail.herokuapp.com/api/v2/groups/";
     const newMember = {
         userid: userid.value,
 

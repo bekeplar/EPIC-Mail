@@ -106,6 +106,9 @@ function createMessage() {
         .catch((error) => console.log(error));
 
 }
+function logout() {
+    localStorage.removeItem("token");
+}
 
 
 

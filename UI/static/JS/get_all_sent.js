@@ -16,11 +16,9 @@ function getSentMessages() {
                     window.location.replace("../templates/index.html");
                 }, 5000);
 
-            console.log(data.data.subject)
             } else if (data.status === 200) {
                 //on success
                 let messages = data["data"];
-                // console.log(data['data'])
                 data.data.forEach(function (mails) {
 
 
@@ -51,3 +49,6 @@ function getSentMessages() {
 
 }
 getSentMessages()
+function logout() {
+    localStorage.removeItem("token");
+}

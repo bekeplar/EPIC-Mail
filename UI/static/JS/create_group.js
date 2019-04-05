@@ -86,7 +86,6 @@ function createGroup() {
                 let successMsg = data["data"][0]["success"];
                 document.getElementById('success_msg').style.display = "block";
                 document.getElementById('success_msg').innerHTML = "Group created Successfully!";
-                // document.getElementById("myUL").style.display = "hide"
                 window.setTimeout(function () {
                     window.location.replace("../templates/group.html");
                 }, 5000);;
@@ -96,4 +95,7 @@ function createGroup() {
         })
         .catch((error) => console.log(error));
 
+}
+function logout() {
+    localStorage.removeItem("token");
 }

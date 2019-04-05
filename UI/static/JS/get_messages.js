@@ -11,7 +11,6 @@ function getMessages() {
     })
         .then((response) => response.json())
         .then((data) => {
-            console.log('hbjh')
             if (data.status === 401) {
                 window.setTimeout(function () {
                     window.location.replace("../templates/index.html");
@@ -52,3 +51,6 @@ function getMessages() {
 
 }
 getMessages()
+function logout() {
+    localStorage.removeItem("token");
+}

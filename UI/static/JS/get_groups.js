@@ -21,7 +21,6 @@ function getGroups() {
             } else if (data.status === 200) {
                 //on success
                 let Groups = data["data"];
-                console.log(data['data'])
                 data.data.forEach(function (groups) {
 
 
@@ -51,4 +50,7 @@ function getGroups() {
         .catch((error) => console.log(error));
 
 
+}
+function logout() {
+    localStorage.removeItem("token");
 }

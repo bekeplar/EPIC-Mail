@@ -94,11 +94,11 @@ form button:hover{
 
 
 .sidebar {
-    height: 30%;
+    height: 40%;
     background-color:blue;
     width: 165px;
     position: fixed;
-    left: 0;
+    left: 2;
     padding-top: 20px;
     padding-left: 2%;
     margin-left: 1%;
@@ -108,8 +108,8 @@ form button:hover{
 .sidebar a {
     text-decoration: none;
     display: block;
-    font-size: 25px;
-    padding: 6px 8px 6px 16px;
+    font-size: 150%;
+    padding: 6% 8% 6% 16%;
     margin-top: 10px;
     color: white;
 }
@@ -131,8 +131,9 @@ form button:hover{
 }
 textarea {
     width: 80.9%;
-    height: 20vw;
+    height: 10vw;
     margin-left: 8%;
+    margin-bottom: 5%;
 }
 
 #la-boni textarea {
@@ -200,20 +201,21 @@ fieldset {
         }
 
     .sidebar {
-        height: 40%;
+        height: 30%;
         background-color:blue;
-        width: 85px;
+        width: 20%;
         position: fixed;
         left: 0;
-        padding-top: 10px;
+        padding-top: 5%;
         padding-left: 2%;
+        margin-bottom: 5%;
         margin-left: 1%;
         border-radius: 5px;
     }
 
     .epicmail {
-        margin-top: 3px;
-        margin-left: 16.1%;
+        margin-top: 3%;
+        margin-left: 26.1%;
         font-size: 16px;
         width: 60%;
         background-color: blue;

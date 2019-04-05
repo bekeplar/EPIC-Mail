@@ -10,7 +10,7 @@
             <h1>EpicMail</h1>
         </header>
         <div class="top">
-          <a href="index.html">Logout</a>
+          <a href="index.html" onclick="logout()" >Logout</a>
 
           </div> 
           <img src="../static/images/loading.svg" id="submit_progress" class="hide">  
@@ -18,9 +18,9 @@
         <div id="myDIV" class="header">
           <span class="success" id="success_msg"></span>
           <h2 style="margin:5px">Create Group</h2>
-          <input type="text" id="myInput" placeholder="GroupName">
+          <input type="text" id="myInput" placeholder="GroupName"><br>
           <span onclick="createGroup()" class="addBtn">Add</span>
-          <span onclick="getGroups()" class="addBtn">My groups</span>
+          <span onclick="getGroups()" class="addBtn">All</span>
           <span class="error" id="group_name-error"></span>
         </div>
         

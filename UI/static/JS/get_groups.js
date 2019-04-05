@@ -27,7 +27,7 @@ function getGroups() {
                     output += `
                     
                     <li>${groups.group_name}</li>
-                    <li><p>id:</p>${groups.group_id}</li>
+                    <li>${groups.group_id}</li>
                                 `;
 
                 if (Groups.length === 0) {

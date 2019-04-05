@@ -7,75 +7,76 @@
     <title>Users dashoard!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../static/user.css">
-    <script src="../JS/epic.js"></script>
+    <script src="../static/JS/epic.js"></script>
 </head>
 
-<body>
-    <div class="header">
-        <a href="#" class="logo"><span></span>Epic</span><span>Mail</span></a>
-        <div class="header-right">
-            <a href="group.html">Admin</a>
-            <a href="index.html">Logout</a>
+    <body>
+        <div class="header">
+                <img src="../static/images/loading.svg" id="submit_progress" class="hide">
+            <a href="#" class="logo"><span></span>Epic</span><span>Mail</span></a>
+            <div class="header-right">
+                <a href="group.html">Admin</a>
+                <a href="index.html">Logout</a>
+            </div>
         </div>
-    </div>
-    <div class="body">
-        <div class="sidebar">
-            <a href="#" class="tablink" onclick="openPage('compose')">New</a>
-            <a href="#" class="tablink" onclick="openPage('inbox')" id="defaultOpen">Inbox</a>
-            <a href="#" class="tablink" onclick="openPage('sent')">Sent</a>
-            <a href="#" class="tablink" onclick="openPage('draft')">Drafts</a>
-        </div>
-        <div id="compose" class="epicmail">
-            <form>
-                <div id="la-fonic">Create New message</div>
+        <div class="body">
+            <div class="sidebar">
+                <a href="#" class="tablink" onclick="openPage('compose')" id="defaultOpen">New</a>
+                <a href="#" class="tablink" onclick="openPage('inbox')" >Inbox</a>
+                <a href="#" class="tablink" onclick="openPage('sent')">Sent</a>
+                <a href="#" class="tablink" onclick="openPage('draft')">Drafts</a>
+            </div>
+            <div id="compose" class="epicmail">
+                <span class="success" id="success_msg"></span>
+                <form action="#" onsubmit="createMessage(); return false">
+                    <div id="la-fonic">Create New message</div>
+                    <hr>
+                    <div><input type="text" id="reciever" placeholder="Reciever" required></div>
+                    <span class="error" id="receiver-error"></span>
+                    <hr>
+                    <div ><input type="text" id="subject" required placeholder="Subject"></div>
+                    <span class="error" id="subject-error"></span>
+                    <textarea id="message">Message body</textarea>
+                    <span class="error" id="body-error"></span>
+                    <div class="button">
+                        <button type="submit" class="send_button">Save Draft</button>
+                        <button type="submit" class="save_button">Send</button>
+                    </div>
+                    
+                </form>
+            </div>
+            <div id="inbox" class="epicmail">
+                <div id="la-fonix">My Inbox</div>
+                <div id="getMessages"></div>
+            
+            </div>
+            <div id="sent" class="epicmail">
+                <div id="la-fonix">Sent</div>
+                <div id="getSentMessages"></div>
+            </div>
+            <div id="draft" class="epicmail">
+                <div id="la-fonix">Drafts</div>
                 <hr>
-                <div id="reciever"><input type="email" placeholder="To" required></div>
+                <div><a href="#"onclick="openPage('la-boni')">Kindly resend me</a></div>
                 <hr>
-                <div id="subject"><input type="text" placeholder="Subject"></div>
-                <textarea>Message body</textarea>
                 <div class="button">
-                    <button type="submit" class="send_button">Save Draft</button>
+                    <button type="submit" class="send_button">Delete</button>
                     <button type="submit" class="save_button">Send</button>
                 </div>
-            </form>
-        </div>
-        <div id="inbox" class="epicmail">
-            <div id="la-fonix">My Inbox</div>
-            <hr>
-            <div><a href="#"onclick="openPage('la-boni')">Andela21 Expression</a></a></div>
-            <hr>
-            <div><a href="#"onclick="openPage('la-boni')">Digest Africa</a></div>
-           
-        </div>
-        <div id="sent" class="epicmail">
-            <div id="la-fonix">Sent</div>
-            <hr>
-            <div><a href="#"onclick="openPage('la-boni')">My Andela Application</a></div>
-            <hr>
-            <div><a href="#"onclick="openPage('la-boni')">Mtn weekly data</a></div>
-            <hr>
-        </div>
-        <div id="draft" class="epicmail">
-            <div id="la-fonix">Drafts</div>
-            <hr>
-            <div><a href="#"onclick="openPage('la-boni')">Kindly resend me</a></div>
-            <hr>
-            <div class="button">
-                <button type="submit" class="send_button">Delete</button>
-                <button type="submit" class="save_button">Send</button>
             </div>
-        </div>
-       
-        <div id="la-boni" class="epicmail">
-            <textarea name="" id="" cols="20" rows="5">Reply</textarea>
-            <div class="button">
-                <button type="submit" class="send_button">Reply</button>
-                <button type="submit" class="save_button">Delete</button>
+        
+            <div id="la-boni" class="epicmail">
+                <textarea name="" id="" cols="20" rows="5">Reply</textarea>
+                <div class="button">
+                    <button type="submit" class="send_button">Reply</button>
+                    <button type="submit" class="save_button">Delete</button>
+                </div>
             </div>
-        </div>
-    <script>
-        document.getElementById("defaultOpen").click();
-    </script>
-</body>
-
+        <script>
+            document.getElementById("defaultOpen").click();
+        </script>
+    </body>
+    <script src="../static/JS/create_message.js"></script>
+    <script src="../static/JS/get_messages.js"></script>
+    <script src="../static/JS/get_all_sent.js"></script>
 </html>

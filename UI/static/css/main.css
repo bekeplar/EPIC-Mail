@@ -11,6 +11,18 @@ h2{
     font-size: 120;
 }
 
+/* Set a style for the submit button */
+#button .btn {
+  background-color:blue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 60%;
+}
+
+
 h3{
     color: blue;
     text-align: center;
@@ -191,17 +203,7 @@ span.psw {
     border: 2px solid dodgerblue;
   }
   
-   /* Set a style for the submit button */
-  .btn {
-    background-color: dodgerblue;
-    color: white;
-    padding: 15px 20px;
-    border: none;
-    cursor: pointer;
-    width: 80%;
-    opacity: 0.9;
-  }
-  
+   
   .btn:hover {
     opacity: 1;
   }
@@ -423,10 +425,11 @@ span.psw {
 
 .success {
   display: none;
-  font-size: small;
+  font-size: large;
   color: hsl(142, 90%, 51%);
   font-weight: bold;
   padding-top: 0.30em;
+  margin-left: 5%;
 }
 
 h4{

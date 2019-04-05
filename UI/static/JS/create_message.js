@@ -57,14 +57,14 @@ Emailmessage.onkeyup = function () {
 function createMessage() {
     const submitProgress = document.getElementById("submit_progress");
     submitProgress.style.display = 'block';
-    // const url = "https://kepicmail.herokuapp.com/api/v2/messages";
-    const url = "http://127.0.0.1:5000/api/v2/messages";
+    const url = "https://kepicmail.herokuapp.com/api/v2/messages";
     const newMessage = {
-        receiver: reciever.value,
+        reciever: reciever.value,
         subject: subject.value,
         message: message.value,
 
     };
+    console.log('hrrtyugihft')
     console.log(newMessage)
     let token = localStorage.getItem("token");
     fetch(url, {

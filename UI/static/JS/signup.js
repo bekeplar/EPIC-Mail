@@ -92,8 +92,7 @@ function signUpAccount() {
     const submitProgress = document.getElementById("submit_progress");
     submitProgress.style.display = 'block';
 
-    // const url = "https://kepicmail.herokuapp.com/api/v2/auth/signup";
-    const url = "http://127.0.0.1:5000/api/v2/auth/signup";
+    const url = "https://kepicmail.herokuapp.com/api/v2/auth/signup";
     const newUser = {
         firstname: firstName.value,
         lastname: lastName.value,

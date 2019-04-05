@@ -1,6 +1,5 @@
 function getGroups() {
-    const url = "https://kepicmail.herokuapp.com/api/v2/Groups";
-    // var url = "http://127.0.0.1:5000/api/v2/groups";
+    const url = "https://kepicmail.herokuapp.com/api/v2/groups";
     var token = localStorage.getItem("token");
     let output = '';
     fetch(url, {

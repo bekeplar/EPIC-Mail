@@ -19,13 +19,16 @@ function getSentMessages() {
             } else if (data.status === 200) {
                 //on success
                 let messages = data["data"];
+                console.log(messages);
                 data.data.forEach(function (mails) {
 
 
                     output += `
                     <hr>
-                    <a href="#"onclick="openPage('la-boni')">${mails.subject}</a>
-                                `;
+                    <a >${mails.subject}</a>
+                    <li style="list-style:none; font-size:50%; margin-left:5%;>Date:${mails.created_on}</li>
+                    <li style="list-style:none; font-size:50%; margin-left:5%;>To:${mails.reciever}</li>
+                    <button href="#"onclick="openPage('la-boni')">ViewDetails</button>            `;
 
                 if (messages.length === 0) {
                         output += `

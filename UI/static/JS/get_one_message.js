@@ -1,7 +1,7 @@
 function getMessage() {
     let messageId = document.getElementById("myDL").value;
-    const url = "https://kepicmail.herokuapp.com/api/v2/messages/"+messageId
-
+    const url = "https://kepicmail.herokuapp.com/api/v2/messages"
+    let token = localStorage.getItem("token")
     let output = '';
     fetch(url, {
         method: "GET",
@@ -24,10 +24,13 @@ function getMessage() {
 
 
                     output += `
-                    
-                    <li>${mails.subject}</li>
-                    <li>${mails.message}</li>
-                    <li>${mails.sender_id}</li>
+                    <hr>
+                    <li style="list-style:none; font-size:50%; margin-left:5%;>subject:${mails.subject}</li>
+                    <li style="list-style:none; font-size:50%; margin-left:5%;>message:${mails.message}</li>
+                    <li style="list-style:none; font-size:50%; margin-left:5%;>sender:${mails.sender_id}</li>
+                    <li style="list-style:none; font-size:50%; margin-left:5%;>messageId:${mails.message_id}</li>
+                    <li style="list-style:none; font-size:50%; margin-left:5%;>reciever:${mails.reciever}</li>
+                    <li style="list-style:none; font-size:50%; margin-left:5%;>date:${mails.created_on}</li>
                                 `;
 
                 if (messages.length === 0) {
@@ -45,13 +48,13 @@ function getMessage() {
                     });
                 }
 
-                document.getElementById('getSentMessages').innerHTML = output;
+                document.getElementById('getMessage').innerHTML = output;
         })
         .catch((error) => console.log(error));
 
 
 }
-getSentMessages()
+getMessage()
 function logout() {
     localStorage.removeItem("token");
 }

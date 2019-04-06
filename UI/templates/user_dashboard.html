@@ -12,7 +12,6 @@
 
 <body>
     <div class="header">
-        <img src="../static/images/loading.svg" id="submit_progress" class="hide">
         <a href="#" class="logo"><span></span>Epic</span><span>Mail</span></a>
         <div class="header-right">
             <a href="group.html">Groups</a>
@@ -27,6 +26,7 @@
             <a href="#" class="tablink" onclick="openPage('draft')">Drafts</a>
         </div>
         <div id="compose" class="epicmail">
+                <img src="../static/images/loading.svg" id="submit_progress" class="hide">
             <span class="success" id="success_msg"></span>
             <form action="#" onsubmit="createMessage(); return false">
                 <div id="la-fonic">Create New message</div>
@@ -67,10 +67,11 @@
 
         <div id="la-boni" class="epicmail">
             <input name="" id="myDL" cols="20" rows="5">
+            <div id="details" style="background-color:antiquewhite;"></div>
             <div class="button">
-                <button type="submit" class="send_button">viewDetails</button>
                 <button type="submit" onclick="deleteMessage();" class="save_button">Delete</button>
-            </div>
+            </div>    
+            <div id="getMessage" ></div>
         </div>
         <script>
             document.getElementById("defaultOpen").click();
@@ -80,5 +81,6 @@
 <script src="../static/JS/get_messages.js"></script>
 <script src="../static/JS/get_all_sent.js"></script>
 <script src="../static/JS/delete_mail.js"></script>
+<script src="../static/JS/get_one_message.js"></script>
 
 </html>

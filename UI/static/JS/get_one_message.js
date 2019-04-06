@@ -27,7 +27,7 @@ function getMessage() {
                     <hr>
                     <li style="list-style:none; font-size:50%; margin-left:5%;>subject:${mails.subject}</li>
                     <li style="list-style:none; font-size:50%; margin-left:5%;>message:${mails.message}</li>
-                    <li style="list-style:none; font-size:50%; margin-left:5%;>sender:${mails.sender}</li>
+                    <li style="list-style:none; font-size:50%; margin-left:5%;>sender:${mails.sender_id}</li>
                     <li style="list-style:none; font-size:50%; margin-left:5%;>messageId:${mails.message_id}</li>
                     <li style="list-style:none; font-size:50%; margin-left:5%;>reciever:${mails.reciever}</li>
                     <li style="list-style:none; font-size:50%; margin-left:5%;>date:${mails.created_on}</li>

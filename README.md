@@ -36,7 +36,7 @@ As EPIC Andelans who work towards advancing human potential and giving back to t
 
 :link: [Live project on gh-pages](https://bekeplar.github.io/EPIC-Mail/UI/)
 
-:link: [Link to Source code](https://github.com/bekeplar/EPIC-MailAPI/tree/develop)
+:link: [Link to Source code](https://github.com/bekeplar/EPIC-Mail)
 
 
 ### API V2 - PostgreSQL database

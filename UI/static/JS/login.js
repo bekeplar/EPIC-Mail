@@ -1,3 +1,42 @@
+const password = document.getElementById("password");
+const email = document.getElementById("email");
+// Password strength validations
+function validatePasswordStrength() {
+    const passwordError = document.getElementById("password-error");
+
+    if (/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/.test(password.value)) {
+        passwordError.style.display = "none";
+        password.setCustomValidity("");
+
+    } else {
+        passwordError.style.display = "block";
+        passwordError.innerHTML = "Password Must contain a Minimum of 8 characters" +
+            " with atleast one upper case letter, atleast on lower case letter and atleast one number.";
+        password.setCustomValidity("Weak Password.");
+
+    }
+
+}
+
+
+
+password.onkeyup = validatePasswordStrength;
+password.onchange = validatePasswordStrength;
+
+// Displaying the error in form of an array
+
+function displayError(dataArray) {
+
+    for (let key in dataArray) {
+
+        if ({}.hasOwnProperty.call(dataArray, key)) {
+            let fieldError = document.getElementById(key + "-error");
+            fieldError.style.display = "block";
+            fieldError.innerHTML = dataArray[key];
+        }
+    }
+}
+
 function login() {
 
     const url = "https://kepicmail.herokuapp.com/api/v2/auth/login";

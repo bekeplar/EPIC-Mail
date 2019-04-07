@@ -1,39 +1,35 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../static/css/main.css" />
-    <title>Login</title>
     </head>
   <body>
       <header>
           <h1>EpicMail</h1>
       </header>
-      
-      <div  class="modal">
-          <form class="modal-content animate" action="user_dashboard.html" action="#" onsubmit="login();return false">
-              <div class="container">
-                  <img src="../static/images/loading.svg" id="submit_progress" class="hide">
-
-                  <span class="error" id="error"></span>
-                  <span class="success" id="success"></span>
-                <label for="email"><b>Email &</b></label>
-                <input type="text" id="email" placeholder="Enter Email" name="email" required>
-
-                <label for="psw"><b>Password</b></label>
-                <input type="password" id="password" placeholder="Enter Password" name="psw" required>
-                  
-                <button type="submit">Login</button>
-              </div>
-              <div class="container">
-                <span class="psw">Forgot password? <a href="reset.html">Reset</a></span><br><br><br>
+        <form  id="la-fonia" action="#"
+        onsubmit="login();return false">
+            <h2>User Login</h2>
+            <img src="../static/images/loading.svg" id="submit_progress" class="hide">
+            <span class="error" id="error"></span>
+            <span class="success" id="success"></span>
+            <div class="input-container">
+              <i class="fa fa-envelope icon"></i>
+              <input class="input-field" type="text" id="email" placeholder="Email" name="email">
+            </div>
+            <span class="error" id="email-error"></span>
+            <div class="input-container">
+              <i class="fa fa-key icon"></i>
+              <input class="input-field" type="password" id="password"  placeholder="Password" name="psw">
+            </div>
+            <span class="error" id="password-error"></span>
+            <div id="button"> <button type="submit" class="btn">Login</button></div>
+            <span class="sgn">Forgot password? <a href="reset.html">Reset</a></span><br><br>
                 <span class="sgn">Don't have an account? <a href="signup.html">Signup</a></span>
               </div>
-              <h3>Epic mail is an application that enable people communicate over the internet allover the world!</h3>
-          </form>
-    </div>
+        </form>
+        <h3>EpicMail is an application that enable people communicate over the internet allover the world!</h3>
   </body>
   <script src="../static/JS/login.js"></script>
 </html>

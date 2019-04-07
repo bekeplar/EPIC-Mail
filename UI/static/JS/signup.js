@@ -72,6 +72,7 @@ lastName.onkeyup = function () {
 
 };
 
+
 // Displaying the error in form of an array
 
 function displayError(dataArray) {

@@ -13,7 +13,7 @@ h2{
 
 /* Set a style for the submit button */
 #button .btn {
-  background-color:blue;
+  background-color:dodgerblue;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -24,20 +24,28 @@ h2{
 
 
 h3{
-    color: blue;
+    color: black;
     text-align: center;
     font-weight: italic; 
     text-shadow: #555;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 120%;
+    font-size: 180%;
     padding-bottom: 5%;
 }
+
 
 #la-fonix{
   max-width:500px;
   margin:auto;
   padding-bottom: 5%;
   margin-bottom: 5%;
+}
+
+#la-fonia{
+  max-width:500px;
+  margin:auto;
+  padding-bottom: 5%;
+  margin-bottom: 2%;
 }
 
 .container{
@@ -594,7 +602,6 @@ h4{
 
 
 h3{
-  display: none;
   font-size: 50%;
 }
 

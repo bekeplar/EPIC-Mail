@@ -6,6 +6,8 @@ body {
 overflow: hidden;
 background-color: blue;
 margin-top: -18px;
+padding-right: 5%;
+padding-top: 2%;
 }
 
 .header a {
@@ -88,14 +90,14 @@ form button {
   
 
 form button:hover{
-    background-color: black;
+    background-color: rgb(120, 240, 248);
     color: blue;
 }
 
 
 
 .sidebar {
-    height: 40%;
+    height: 60%;
     background-color:blue;
     width: 165px;
     position: fixed;
@@ -202,7 +204,7 @@ fieldset {
         }
 
     .sidebar {
-        height: 30%;
+        height: 60%;
         background-color:blue;
         width: 20%;
         position: fixed;

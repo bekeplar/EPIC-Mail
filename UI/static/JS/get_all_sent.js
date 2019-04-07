@@ -26,8 +26,8 @@ function getSentMessages() {
                     output += `
                     <hr>
                     <a >${mails.subject}</a>
-                    <li style="list-style:none; font-size:50%; margin-left:5%;>Date:${mails.created_on}</li>
-                    <li style="list-style:none; font-size:50%; margin-left:5%;>To:${mails.reciever}</li>
+                    <li style="list-style:none; font-size:50%; margin-left:5%; color:black;>Date:${mails.created_on}</li>
+                    <li style="list-style:none; font-size:50%; margin-left:5%; color:black;>To:${mails.reciever}</li>
                     <button href="#"onclick="openPage('la-boni')">ViewDetails</button>            `;
 
                 if (messages.length === 0) {

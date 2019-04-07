@@ -28,7 +28,7 @@ function getMessages() {
                     <hr>
                     <a >${mails.subject}</a>
                     <li style="list-style:none; font-size:50%; margin-left:5%;>Date:${mails.created_on}</li>
-                    <li style="list-style:none; font-size:50%; margin-left:5%;>From:${mails.sender_id}</li>
+                    <li style="list-style:none; font-size:50%; margin-left:5%; color:black;>From:${mails.sender_id}</li>
                     <button href="#"onclick="openPage('la-boni')">ViewDetails</button>            
                                 `;
 

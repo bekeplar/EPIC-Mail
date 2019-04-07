@@ -9,6 +9,7 @@ header, h1{
 
 h2{
     font-size: 120;
+    color: black;
 }
 
 /* Set a style for the submit button */
@@ -19,18 +20,18 @@ h2{
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 60%;
+  width: 100%;
 }
 
 
 h3{
-    color: black;
+    color: blue;
     text-align: center;
     font-weight: italic; 
     text-shadow: #555;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 180%;
-    padding-bottom: 5%;
+    font-size: 130%;
+
 }
 
 
@@ -45,7 +46,6 @@ h3{
   max-width:500px;
   margin:auto;
   padding-bottom: 5%;
-  margin-bottom: 2%;
 }
 
 .container{
@@ -318,7 +318,7 @@ span.psw {
   
   /* Style the header */
   .header {
-    background-color: blue;
+    background-color: white;
     padding: 30px 40px;
     margin-top: 5%;
     color: white;
@@ -412,8 +412,8 @@ span.psw {
 
 .top a{
     text-decoration: none;
-    background-color: blue;
-    color: white;
+    background-color: white;
+    color: blue;
     padding: 15% 20%;
     border-radius: 5px;
     text-align: center;

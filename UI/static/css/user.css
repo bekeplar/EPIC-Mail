@@ -4,7 +4,7 @@ body {
 
 .header {
 overflow: hidden;
-background-color: blue;
+background-color: whitesmoke;
 margin-top: -18px;
 padding-right: 5%;
 padding-top: 2%;
@@ -62,6 +62,7 @@ form button {
 
  #la-fonic, #la-fonix{
     text-align: center;
+    color: blue;
     font-size: 30px;
     margin-top: 20px;
 }
@@ -90,7 +91,7 @@ form button {
   
 
 form button:hover{
-    background-color: rgb(120, 240, 248);
+    background-color: rgb(12, 236, 252);
     color: blue;
 }
 
@@ -98,7 +99,7 @@ form button:hover{
 
 .sidebar {
     height: 60%;
-    background-color:blue;
+    background-color:white;
     width: 165px;
     position: fixed;
     left: 2;
@@ -114,7 +115,7 @@ form button:hover{
     font-size: 150%;
     padding: 6% 8% 6% 16%;
     margin-top: 10px;
-    color: white;
+    color: blue;
 }
 
 .epicmail {
@@ -122,7 +123,7 @@ form button:hover{
     margin-left: 16.1%;
     font-size: 28px;
     width: 80%;
-    background-color: rgb(98, 98, 156);
+    background-color: white;
     color: white;
     display: none;
     padding-top: 20px;
@@ -141,6 +142,7 @@ textarea {
 
 #la-boni textarea {
     height: 90px;
+    color: blue;
 }
 
 h3 {
@@ -165,13 +167,13 @@ p {
 
 .epicmail a{
     text-decoration: none;
-    color: aliceblue;
+    color: black;
     margin-left: 20px;
 }
 
 
 ::placeholder{
-    color: rgb(240, 239, 239);
+    color: rgb(39, 22, 22);
 }
 
 button {
@@ -205,7 +207,6 @@ fieldset {
 
     .sidebar {
         height: 60%;
-        background-color:blue;
         width: 20%;
         position: fixed;
         left: 0;
@@ -221,7 +222,6 @@ fieldset {
         margin-left: 26.1%;
         font-size: 16px;
         width: 60%;
-        background-color: blue;
         display: none;
         padding-top: 10px;
     }

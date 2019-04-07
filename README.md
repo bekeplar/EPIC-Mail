@@ -23,10 +23,29 @@ As EPIC Andelans who work towards advancing human potential and giving back to t
 
 - HTML
 - CSS
+- JavaScript
+- [Fetch-Api](https://github.com/mdn/fetch-examples)
+- [Python](https://www.python.org/)
+- [Flask](http://flask.pocoo.org/)
 
-## Hosting link
+### User stories on Pivotal tracker
 
-[https://bekeplar.github.io/EPIC-Mail/UI/templates/index.html]
+:link:  [Link to user stories](https://www.pivotaltracker.com/n/projects/2318783)
+
+### UI Templates
+
+:link: [Live project on gh-pages](https://bekeplar.github.io/EPIC-Mail/UI/)
+
+:link: [Link to Source code](https://github.com/bekeplar/EPIC-MailAPI/tree/develop)
+
+
+### API V2 - PostgreSQL database
+
+:rocket: [Link to Deployment on Heroku API V2](https://kepicmail.herokuapp.com/)
+
+
+:link: [Link API V2 Source code](https://github.com/bekeplar/EPIC-MailAPI/tree/develop)
+
 
 ## Authors
 

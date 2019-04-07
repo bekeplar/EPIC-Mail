@@ -56,6 +56,8 @@ form button {
     height: 40px;
     border: 1px solid white;
     border-radius: 6px;
+    background-color: blue;
+    color: white;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -92,14 +94,14 @@ form button {
 
 form button:hover{
     background-color: rgb(12, 236, 252);
-    color: blue;
+    color: white;
 }
 
 
 
 .sidebar {
     height: 60%;
-    background-color:white;
+    background-color:whitesmoke;
     width: 165px;
     position: fixed;
     left: 2;

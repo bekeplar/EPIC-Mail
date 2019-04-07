@@ -85,7 +85,7 @@ function createMessage() {
             } else if (data.status === 401) {
                 displayError(data.error);
                 window.setTimeout(function () {
-                    window.location.replace("../templates/index.html");
+                    window.location.replace("../index.html");
                 }, 5000);
 
 

@@ -75,8 +75,8 @@ function createGroup() {
             } else if (data.status === 401) {
                 displayError(data.error);
                 window.setTimeout(function () {
-                    window.location.replace("..templates/index.html");
-                }, 5000);
+                    window.location.replace("../index.html");
+                }, 1000);
 
 
             } else if (data.status === 201) {

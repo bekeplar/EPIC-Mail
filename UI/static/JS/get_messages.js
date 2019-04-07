@@ -13,8 +13,8 @@ function getMessages() {
         .then((data) => {
             if (data.status === 401) {
                 window.setTimeout(function () {
-                    window.location.replace("../templates/index.html");
-                }, 5000);
+                    window.location.replace("../index.html");
+                }, 1000);
 
             console.log(data.data.subject)
             } else if (data.status === 200) {

@@ -64,7 +64,6 @@ function createMessage() {
         message: message.value,
 
     };
-    console.log('hrrtyugihft')
     console.log(newMessage)
     let token = localStorage.getItem("token");
     fetch(url, {
@@ -86,7 +85,7 @@ function createMessage() {
                 displayError(data.error);
                 window.setTimeout(function () {
                     window.location.replace("../index.html");
-                }, 5000);
+                }, 1000);
 
 
             } else if (data.status === 201) {
@@ -99,6 +98,16 @@ function createMessage() {
                 window.setTimeout(function () {
                     window.location.replace("./user_dashboard.html");
                 }, 1000);;
+
+            } else if (data.status === 404) {
+                submitProgress.style.display = 'none';
+                document.getElementById("success_msg").style.display = "none";
+                document.getElementById("error").style.display = "block";
+                document.getElementById("error").innerHTML = data.error;
+                window.setTimeout(function () {
+                    document.getElementById("error").style.display = "none";
+
+                }, 3000);
 
             }
 
